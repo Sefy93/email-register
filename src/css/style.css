@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(234, 29%, 20%);
+}
+
+ul , ol{
+    list-style: none;
+}
+
+body{
+    background-color: hsl(235, 18%, 26%);
+    height: 100vh;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: hsl(234, 29%, 20%);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 80%;
+    border-radius: 30px;
+    width: 60%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 95%;
+    width: 95%;
+}
+
+#picture{
+    background-image: url("../images/illustration-sign-up-desktop.svg");
+    height: 95%;
+    width: 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+main .container .content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    width: 49%;
+    margin-left: 20px;
+    
+}
+.content h1{
+    font-size: clamp(2.5em , 1em + 3.5vw , 3.6em);
+}
+
+.content p{
+    font-size: 16px;
+    }
+.content ul{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.content ul li{
+    
+    display: flex;
+    gap: 15px;
+}
+
+form div{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#valid{
+    color: red;
+    display: none;
+}
+
+form input{
+    
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+#email{
+margin-bottom: 10px;
+padding: 13px;
+}
+
+#subscribe{
+    border: none;
+    background-color:hsl(234, 29%, 20%) ;
+    color: hsl(0, 0%, 100%);
+    padding: 15px;
+}
+
+#subscribe:active{
+    background:linear-gradient(45deg,hsl(4, 100%, 67%),hsl(0, 45%, 55%),red);
+}
